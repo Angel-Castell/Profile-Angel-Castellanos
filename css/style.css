@@ -171,8 +171,13 @@ main{
 	border-width: 1px 0px;
 }
 
+#section1{
+	border-top: 0px;
+}
+
 #section4{
 	padding-bottom: 30px;
+	margin-bottom: 0px;
 }
 
 h1, h2, h3, p{
@@ -306,6 +311,10 @@ h2{
 	 animation: animatetoplayer 5s linear infinite;  	 
 }
 
+.content>p{
+	padding-left: 1%;
+}
+
 @keyframes animatetoplayer{
 	0%,5%{
 		transform: scaleY(0) translateX(0);
@@ -345,12 +354,15 @@ section .row{
 	object-position: center;
 }
 
+
+
 section #middle{
 	margin-left: 25%;
 }
 
 .content>p{
 	color: #495057;
+	padding-left: 1%;
 }
 
 div{
@@ -462,63 +474,45 @@ section h3, section h4{
 }
 
 
-@media only screen and (max-width: 450px){
-	section{
-		width: 80%;
-	}
-}
-
-
 
 @media only screen and (max-width: 990px){
 	header{
-		display: none;
-		position: absolute;
-		padding: 0px;
-		margin: 0px;
-		width: 0%;
-		height: 0%;	
+		display: block;
+		position: fixed;
+		margin-top: -20px;
+		padding: 0px 20px;
+		width: 100%;
+		height: calc(10vh);
+		background: -webkit-linear-gradient(#0faeb5ba, #fff);
+		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
+		transform: 0.5s;	
+		z-index: 5;
 	}
 
 	header div{
 		position: absolute;
-		display: none;
-		width: 0%;
-		height: 0%;
+		top: 30%;
+		left: 5%;
+		display: block;
+		width: 20%;
+		height: 80%;
 	}
 
-	header img, li{
+	header img{
 		position: absolute;
-		display: none;
-		width: 0%;
-		height: 0%;
+		display: block;
+		width: 30%;
+		height: 30%;
 		padding: 0px;
 		margin: 0px;
-	}
-
-	nav li{
-		position: absolute;
-		display: none;
-		width: 0%;
-		height: 0%;
-		padding: 0px;
-		margin: 0px;
-	}
-
-	li a{
-		position: absolute;
-		display: none;
-		width: 0%;
-		height: 0%;
-		padding: 0px;
-		margin: 0px;
+		float: left;
 	}
 
 	header nav{
 		display: none;
 		position: absolute;
-		width: 0%;
-		height: 0%;
+		width: 100%;
+		height: calc(100vh-50px);
 		background: -webkit-linear-gradient(#0faeb5ba, #fff);
 		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
 		top: 50px;
@@ -540,6 +534,7 @@ section h3, section h4{
 	header nav ul li a{
 		border-bottom: 1px solid rgba(0,0,0,.2);
 		display: block;
+		width: 100%;
 		/*display: block;*/
 	}
 
@@ -554,6 +549,9 @@ section h3, section h4{
 
 	.menu-toggle
 	{
+		position: absolute;
+		top: 0;
+		left: 85%;
 		display: block;
 	}
 
@@ -577,6 +575,15 @@ section h3, section h4{
 		transition-duration: 1s;
 	}
 
+	#section1{
+		padding-top: 10vh;
+	}
+
+	#section4{		
+		padding-bottom: 200px;
+		margin-bottom: 0px;
+	}
+
 }
 
 @media only screen and (max-width: 700px){
@@ -585,10 +592,30 @@ section h3, section h4{
 		transition-duration: 1s;
 	}
 
+	#section4{		
+		padding-bottom: 550px;
+	}
+
 	section .row{
 		width: 75%;	
 		position: relative;
 		left: 10%;
 	}
+
+	section #middle{
+		margin-left: 2%;
+	}
+
+	.content>p{
+		font-size: 10px;
+		font-weight: 1px;
+		padding-left: 1%;
+		color: #495057;
+	}
 }
 
+@media only screen and (max-width: 450px){
+	section{
+		width: 80%;
+	}
+}
