@@ -572,8 +572,13 @@ section h3, section h4{
 }
 
 @media only screen and (max-width: 700px){
+	header{
+		width: 96vw;
+	}
+
 	header, .fullpage{
-		margin-left: -1.75%;
+		margin-left: -2%;
+		width: 98.5vw;
 	}
 
 	section{
@@ -611,12 +616,18 @@ section h3, section h4{
 		color: #495057;
 	}
 
+	main{
+		width: 94vw;		
+		margin-left: -2%;
+	}
+
 	.box{
-		width: 100%;
+		width: 94vw;
+		/*border:5px solid red;*/
 	}
 
 	.box p{	
-		font-size: 12vw;
+		font-size: 12vw;		
 	}
 
 	@keyframes animatelightbar{
@@ -627,10 +638,10 @@ section h3, section h4{
 		transform: scaleY(1) translateX(0);
 	}
 	90%{
-		transform: scaleY(1) translateX(90vw);
+		transform: scaleY(1) translateX(85vw);
 	}
 	95%,100%{
-		transform: scaleY(0) translateX(90vw);
+		transform: scaleY(0) translateX(85vw);
 	}
 }
 }
