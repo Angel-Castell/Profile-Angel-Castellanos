@@ -572,13 +572,17 @@ section h3, section h4{
 }
 
 @media only screen and (max-width: 700px){
+	header, .fullpage{
+		margin-left: -1.75%;
+	}
+
 	section{
 		width: 100%;
 		transition-duration: 1s;
 	}
 
 	h1, h2, h3, p{
-		padding-left: 2%;		
+		padding-left: 3.75%;		
 	}
 
 	p{
@@ -623,10 +627,10 @@ section h3, section h4{
 		transform: scaleY(1) translateX(0);
 	}
 	90%{
-		transform: scaleY(1) translateX(100vw);
+		transform: scaleY(1) translateX(90vw);
 	}
 	95%,100%{
-		transform: scaleY(0) translateX(100vw);
+		transform: scaleY(0) translateX(90vw);
 	}
 }
 }
