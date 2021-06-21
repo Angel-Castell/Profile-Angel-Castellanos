@@ -627,7 +627,7 @@ section h3, section h4{
 	}
 
 	.box p{	
-		font-size: 10vh;		
+		font-size: 12vh;		
 	}
 
 	@keyframes animatelightbar{
@@ -649,5 +649,9 @@ section h3, section h4{
 @media only screen and (max-width: 450px){
 	section{
 		width: 80%;
-	}	
+	}
+	
+	.box p{	
+		font-size: 8vh;		
+	}
 }
