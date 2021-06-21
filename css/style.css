@@ -141,7 +141,18 @@ nav a.active:after{
 	display: block;
 }
 
-.active{
+/*.active{
+	background: #FFFFFF; 	
+	color: #111;
+	box-shadow: 0 0 10px #ffe600;
+	border-bottom: 2px solid #ffbc00;
+	border-right: 2px solid #ffbc00;
+	border-top: 2px solid #ffbc00;
+	border-left: 2px solid #ffbc00;	
+	display: block;
+}*/
+
+a>.active{
 	background: #FFFFFF;
 	/*#ffdf0070*/
 	color: #111;
@@ -153,20 +164,9 @@ nav a.active:after{
 	display: block;
 }
 
-/*nav a .active{
-	background: #FFFFFF;
-	color: #111;
-	box-shadow: 0 0 10px #ffe600;
-	border-bottom: 2px solid #ffbc00;
-	border-right: 2px solid #ffbc00;
-	border-top: 2px solid #ffbc00;
-	border-left: 2px solid #ffbc00;	
-	display: block;
-}*/
 
 main{
 	/*position: static;*/
-
 	display: inline-block;
 	text-align: left;	
 	width: 80%;
@@ -650,8 +650,8 @@ section h3, section h4{
 	section{
 		width: 80%;
 	}
-	
+
 	.box p{	
 		font-size: 8vh;		
-	}
+	}	
 }
