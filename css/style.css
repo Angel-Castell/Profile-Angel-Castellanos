@@ -548,7 +548,7 @@ section h3, section h4{
 		width: 100%;
 	}
 
-	main.space{
+	main .space{
 		padding-top: 200px;
 		display: block;
 		margin-left: -11%;
@@ -627,7 +627,7 @@ section h3, section h4{
 	}
 
 	.box p{	
-		font-size: 12vw;		
+		font-size: 10vh;		
 	}
 
 	@keyframes animatelightbar{
@@ -638,10 +638,10 @@ section h3, section h4{
 		transform: scaleY(1) translateX(0);
 	}
 	90%{
-		transform: scaleY(1) translateX(85vw);
+		transform: scaleY(1) translateX(90vw);
 	}
 	95%,100%{
-		transform: scaleY(0) translateX(85vw);
+		transform: scaleY(0) translateX(90vw);
 	}
 }
 }
