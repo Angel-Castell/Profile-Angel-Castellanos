@@ -232,12 +232,23 @@ h2{
 	margin-right: 70px;
 	font-size: 50px;
 	color: #495057;
+	text-align: center;
+	display: block;
+}
+
+.fab>p,.fas>p{
+	font-size: 15px;
+	width: 90px;
+	padding-left: 0%;
+}
+
+.fas>p{
+	color: rgba(0,0,0,0.35);
 }
 
 
-
 #section3>div>.fab,#section3>div>.fas{
-	margin-right: 40px;
+	margin-right: 0px;
 	margin-bottom: 4%;
 	color: #495057c4;
 }
@@ -631,19 +642,19 @@ section h3, section h4{
 	}
 
 	@keyframes animatelightbar{
-	0%,5%{
-		transform: scaleY(0) translateX(0);
+		0%,5%{
+			transform: scaleY(0) translateX(0);
+		}
+		10%{
+			transform: scaleY(1) translateX(0);
+		}
+		90%{
+			transform: scaleY(1) translateX(90vw);
+		}
+		95%,100%{
+			transform: scaleY(0) translateX(90vw);
+		}
 	}
-	10%{
-		transform: scaleY(1) translateX(0);
-	}
-	90%{
-		transform: scaleY(1) translateX(90vw);
-	}
-	95%,100%{
-		transform: scaleY(0) translateX(90vw);
-	}
-}
 }
 
 @media only screen and (max-width: 450px){
@@ -654,4 +665,8 @@ section h3, section h4{
 	.box p{	
 		font-size: 8vh;		
 	}	
+	
+	.container .card .face.face2 p{
+		font-size: 15px;		
+	}
 }
