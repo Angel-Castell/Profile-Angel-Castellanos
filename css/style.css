@@ -186,6 +186,10 @@ main{
 	border-top: 0px;
 }
 
+#about a{
+	text-decoration: none;
+}
+
 #skills{
 	padding-bottom: 30px;
 	margin-bottom: 0px;
@@ -477,199 +481,6 @@ section h3, section h4{
 	display: none;
 }
 
-
-
-@media only screen and (max-width: 990px){
-	header{
-		display: block;
-		position: fixed;
-		margin-top: -20px;
-		padding: 0px 20px;
-		width: 100%;
-		height: calc(10vh);
-		background: -webkit-linear-gradient(#0faeb5ba, #fff);
-		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
-		transform: 0.5s;
-		z-index: 5;
-	}
-
-	header div{
-		position: absolute;
-		top: 30%;
-		left: 5%;
-		display: block;
-		width: 20%;
-		height: 80%;
-	}
-
-	header img{
-		position: absolute;
-		display: block;
-		width: 30%;
-		height: 30%;
-		padding: 0px;
-		margin: 0px;
-		float: left;
-	}
-
-	header nav{
-		display: none;
-		position: absolute;
-		width: 100%;
-		height: calc(100vh-50px);
-		background: -webkit-linear-gradient(#0faeb5ba, #fff);
-		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
-		top: 50px;
-		left: 0;
-		transform: 0.5s;
-	}
-
-	header nav.active-menu-item{
-		left: 0;
-		display: inline-block;
-		display: block;
-	}
-
-	header nav ul{
-		display: block;
-		text-align: center;
-	}
-
-	header nav ul li a{
-		border-bottom: 1px solid rgba(0,0,0,.2);
-		display: block;
-		width: 100%;
-		/*display: block;*/
-	}
-
-	header nav ul li a:after{
-		content:'';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 0%;
-		height: 0px;
-	}
-
-	.menu-toggle
-	{
-		position: absolute;
-		top: 0;
-		left: 85%;
-		display: block;
-	}
-
-	main{
-		position: absolute;
-		padding-top: 45px;
-		display: inline-block;
-
-		width: 100%;
-	}
-
-	main .space{
-		padding-top: 200px;
-		display: block;
-		margin-left: -11%;
-		margin-right: -10%;
-	}
-
-	section{
-		width: 100%;
-		transition-duration: 1s;
-	}
-
-	#about{
-		padding-top: 10vh;
-	}
-
-}
-
-@media only screen and (max-width: 700px){
-	header{
-		width: 96vw;
-	}
-
-	header, .fullpage{
-		margin-left: -2%;
-		width: 98.5vw;
-	}
-
-	section{
-		width: 100%;
-		transition-duration: 1s;
-	}
-
-	h1, h2, h3, p{
-		padding-left: 3.75%;
-	}
-
-	p{
-		text-align: justify;
-		padding-right: 7%;
-	}
-
-	section .row{
-		width: 75%;
-		position: relative;
-		left: 10%;
-	}
-
-	section #middle{
-		margin-left: 2%;
-	}
-
-	.content>p{
-		font-size: 10px;
-		font-weight: 1px;
-		padding-left: 1%;
-		color: #495057;
-	}
-
-	main{
-		width: 94vw;
-		margin-left: -2%;
-	}
-
-	.box{
-		width: 94vw;
-		/*border:5px solid red;*/
-	}
-
-	.box p{
-		font-size: 12vh;
-	}
-
-	@keyframes animatelightbar{
-		0%,5%{
-			transform: scaleY(0) translateX(0);
-		}
-		10%{
-			transform: scaleY(1) translateX(0);
-		}
-		90%{
-			transform: scaleY(1) translateX(90vw);
-		}
-		95%,100%{
-			transform: scaleY(0) translateX(90vw);
-		}
-	}
-}
-
-@media only screen and (max-width: 450px){
-	section{
-		width: 80%;
-	}
-
-	.box p{
-		font-size: 8vh;
-	}
-
-	.container .card .face.face2 p{
-		font-size: 15px;
-	}
-}
-
 #experience h3{
 	margin-bottom: 0px;
 }
@@ -834,3 +645,204 @@ section h3, section h4{
 	from {opacity: .4}
 	to {opacity: 1}
   }
+
+@media only screen and (max-width: 990px){
+	header{
+		display: block;
+		position: fixed;
+		margin-top: -20px;
+		padding: 0px 20px;
+		width: 100%;
+		height: calc(10vh);
+		background: -webkit-linear-gradient(#0faeb5ba, #fff);
+		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
+		transform: 0.5s;
+		z-index: 5;
+	}
+
+	header div{
+		position: absolute;
+		top: 30%;
+		left: 5%;
+		display: block;
+		width: 20%;
+		height: 80%;
+	}
+
+	header img{
+		position: absolute;
+		display: block;
+		width: 30%;
+		height: 30%;
+		padding: 0px;
+		margin: 0px;
+		float: left;
+	}
+
+	header nav{
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: calc(100vh-50px);
+		background: -webkit-linear-gradient(#0faeb5ba, #fff);
+		background: linear-gradient(to right bottom, #0faeb5ba, #fff);
+		top: 50px;
+		left: 0;
+		transform: 0.5s;
+	}
+
+	header nav.active-menu-item{
+		left: 0;
+		display: inline-block;
+		display: block;
+	}
+
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		display: block;
+		width: 100%;
+		/*display: block;*/
+	}
+
+	header nav ul li a:after{
+		content:'';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0%;
+		height: 0px;
+	}
+
+	.menu-toggle
+	{
+		position: absolute;
+		top: 0;
+		left: 85%;
+		display: block;
+	}
+
+	main{
+		position: absolute;
+		padding-top: 45px;
+		display: inline-block;
+
+		width: 100%;
+	}
+
+	main .space{
+		padding-top: 200px;
+		display: block;
+		margin-left: -11%;
+		margin-right: -10%;
+	}
+
+	section{
+		width: 100%;
+		transition-duration: 1s;
+	}
+
+	#about{
+		padding-top: 10vh;
+	}
+
+}
+
+@media only screen and (max-width: 700px){
+	header{
+		width: 96vw;
+	}
+
+	header, .fullpage{
+		margin-left: -2%;
+		width: 98.5vw;
+	}
+
+	section{
+		width: 100%;
+		transition-duration: 1s;
+	}
+
+
+	#section5, #portfolio{
+		min-width: 96.5vw;
+	}
+
+	.dot {
+		position: relative;
+		top: 10px;
+	}
+
+	h1, h2, h3, p{
+		padding-left: 3.75%;
+	}
+
+	p{
+		text-align: justify;
+		padding-right: 7%;
+	}
+
+	section .row{
+		width: 75%;
+		position: relative;
+		left: 10%;
+	}
+
+	section #middle{
+		margin-left: 2%;
+	}
+
+	.content>p{
+		font-size: 10px;
+		font-weight: 1px;
+		padding-left: 1%;
+		color: #495057;
+	}
+
+	main{
+		width: 94vw;
+		margin-left: -2%;
+	}
+
+	.box{
+		width: 94vw;
+		/*border:5px solid red;*/
+	}
+
+	.box p{
+		font-size: 12vh;
+	}
+
+	@keyframes animatelightbar{
+		0%,5%{
+			transform: scaleY(0) translateX(0);
+		}
+		10%{
+			transform: scaleY(1) translateX(0);
+		}
+		90%{
+			transform: scaleY(1) translateX(90vw);
+		}
+		95%,100%{
+			transform: scaleY(0) translateX(90vw);
+		}
+	}
+}
+
+@media only screen and (max-width: 450px){
+	section{
+		width: 80%;
+	}
+
+	.box p{
+		font-size: 8vh;
+	}
+
+	.container .card .face.face2 p{
+		font-size: 15px;
+	}
+}
