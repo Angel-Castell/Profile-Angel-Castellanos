@@ -92,7 +92,7 @@ nav a:hover{
 	display: block;
 }
 
-a:before{
+nav a:before{
 	content:'';
 	position: absolute;
 	top: 0;
@@ -106,7 +106,7 @@ a:before{
 
 }
 
-a:hover:before{
+nav a:hover:before{
 	width: 100%;
 	height: 100%;
 	border-top: 2px solid #ffbc00;
@@ -114,7 +114,7 @@ a:hover:before{
 	display: block;
 }
 
-a:after{
+nav a:after{
 	content:'';
 	position: absolute;
 	bottom: 0;
@@ -127,7 +127,7 @@ a:after{
 	display: block;
 }
 
-a:hover:after{
+nav a:hover:after{
 	width: 100%;
 	height: 100%;
 	border-bottom: 2px solid #ffbc00;
@@ -135,7 +135,7 @@ a:hover:after{
 	display: block;
 }
 
-nav a.active:after{
+nav a.active-menu-item:after{
 	width: 0%;
 	border-bottom: 2px solid #ffbc00;
 	display: block;
@@ -152,7 +152,7 @@ nav a.active:after{
 	display: block;
 }*/
 
-a>.active{
+a>.active-menu-item{
 	background: #FFFFFF;
 	/*#ffdf0070*/
 	color: #111;
@@ -182,11 +182,11 @@ main{
 	border-width: 1px 0px;
 }
 
-#section1{
+#about{
 	border-top: 0px;
 }
 
-#section4{
+#skills{
 	padding-bottom: 30px;
 	margin-bottom: 0px;
 }
@@ -213,16 +213,16 @@ h2{
 	color: #ff8300;
 }
 
-#section1 > h3{
+#about > h3{
 	margin-bottom: 5%;
 }
 
-#section1>div{
+#about>div{
 	position: absolute;
 	margin-left: 3.7%;
 }
 
-#section4>div{
+#skills>div{
 	position: relative;
 	margin-left: 5%;
 }
@@ -247,27 +247,23 @@ h2{
 }
 
 
-#section4>div>.fab,#section4>div>.fas{
+#skills>div>.fab,#skills>div>.fas{
 	margin-right: 0px;
 	margin-bottom: 4%;
 	color: #495057c4;
 }
 
-#section3>h2,#section4>h2{
+#education>h2,#skills>h2{
 	margin-bottom: 5%;
 }
 
-#section3 h3{
+#education h3{
 	margin-bottom: 10px;
 }
 
-#section3 p{
+#education p{
 	margin-top: 0px;
 	margin-bottom: 5%;
-}
-
-#section6{
-	background: #000;
 }
 
 .box{
@@ -332,8 +328,15 @@ h2{
 	padding-left: 1%;
 }
 
-#section1, #section6{
+#about {
 	padding-top: 25vh;
+}
+
+#portfolio {
+	margin-top: 30px;
+	height: fit-content;
+	border-top: 1px solid gray;
+	border-width: 1px 0px;
 }
 
 .row{
@@ -521,7 +524,7 @@ section h3, section h4{
 		transform: 0.5s;
 	}
 
-	header nav.active{
+	header nav.active-menu-item{
 		left: 0;
 		display: inline-block;
 		display: block;
@@ -576,13 +579,8 @@ section h3, section h4{
 		transition-duration: 1s;
 	}
 
-	#section1{
+	#about{
 		padding-top: 10vh;
-	}
-
-	#section4{
-		padding-bottom: 200px;
-		margin-bottom: 0px;
 	}
 
 }
@@ -609,10 +607,6 @@ section h3, section h4{
 	p{
 		text-align: justify;
 		padding-right: 7%;
-	}
-
-	#section4{
-		padding-bottom: 550px;
 	}
 
 	section .row{
@@ -676,24 +670,167 @@ section h3, section h4{
 	}
 }
 
-#section2 h3{
+#experience h3{
 	margin-bottom: 0px;
 }
 
-#section2 #experience-company{
+#experience #experience-company{
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
-#section2 ul, #section4 ul{
+#experience ul, #skills ul{
 	padding-left: 7%;
 }
 
-#section2 ul li p, #section4 ul li p{
+#experience ul li p, #skills ul li p{
 	padding-left: 0;
 }
 
-#section2 ul ul, #section4 ul ul{
+#experience ul ul, #skills ul ul{
 	padding-left: 3%;
 	margin-bottom: 40px;
 }
+
+.project {
+	background: -webkit-linear-gradient(to right #3c1111, rgb(217, 214, 214));
+	background: linear-gradient(to right, #3c1111, rgb(236, 205, 205));
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.project h3 {
+	color: #ececec;
+	margin: 0;
+	padding-left: 10px;
+}
+
+  /* Slideshow container */
+  .slideshow-container {
+	width: 90%;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	object-position: center;
+  }
+
+  .mySlides img{
+	width: 90%;
+	height: 69%;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	border-top: 0px;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+
+  .preview-next {
+	width: 98%;
+	display: block;
+	margin: 0 auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	width: auto;
+	margin-top: -28%;
+	margin-bottom: 26%;
+	padding: 16px;
+	color: rgb(137, 137, 137);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+
+  .prev {
+	float: left;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+	float: right;
+	margin-left: 80%;
+	border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgba(0,0,0,0.8);
+  }
+
+  .image-description {
+	width: 90%;
+	height: fit-content;
+	margin: 0 auto;
+	display: inline-block;
+	background: #000;
+  }
+
+  /* Caption text */
+  .image-title {
+	color: #eee;
+	font-size: 15px;
+	width: 79%;
+	margin-left: 1%;
+	padding: 10px 0;
+	text-align: left;
+	display: inline-block;
+  }
+
+  /* Number text (1/3 etc) */
+  .image-number {
+	color: #eee;
+	font-size: 12px;
+	padding: 10px 0;
+	width: 17%;
+	text-align: center;
+	display: inline-block;
+  }
+
+  .dot-container{
+	width: fit-content;
+	height: 0px;
+	margin: 0 auto;
+	display: block;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	position: relative;
+	top: -15px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+
+  .active-dot, .dot:hover {
+	background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
