@@ -6,31 +6,51 @@ function update(numero){
 	document.getElementsByClassName('state')[numero].classList.add("active-menu-item");
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex1 = 1;
+let slideIndex2 = 1;
+showSlidesExchangeSystem(slideIndex1);
+showSlidesReservationSystem(slideIndex2);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(project, n) {
+  if (project == 1) {showSlidesExchangeSystem(slideIndex1 += n)}
+  if (project == 2) {showSlidesReservationSystem(slideIndex2 += n)}
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(project, n) {
+  if (project == 1) {showSlidesExchangeSystem(project, slideIndex1 = n)}
+  if (project == 2) {showSlidesReservationSystem(project, slideIndex2 = n)}
 }
 
-function showSlides(n) {
+function showSlidesExchangeSystem(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let slides = document.getElementsByClassName("mySlides-exchage-system");
+  let dots = document.getElementsByClassName("dot-exchage-system");
+  if (n > slides.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active-dot", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active-dot";
+  slides[slideIndex1-1].style.display = "block";
+  dots[slideIndex1-1].className += " active-dot";
+}
+
+function showSlidesReservationSystem(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-reservation-system");
+  let dots = document.getElementsByClassName("dot-reservation-system");
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+  slides[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active-dot";
 }

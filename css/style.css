@@ -529,7 +529,7 @@ section h3, section h4{
 	object-position: center;
   }
 
-  .mySlides img{
+  .fade img{
 	width: 90%;
 	height: 69%;
 	object-fit: cover;
@@ -539,7 +539,7 @@ section h3, section h4{
   }
 
   /* Hide the images by default */
-  .mySlides {
+  .fade {
 	display: none;
   }
 
@@ -614,6 +614,7 @@ section h3, section h4{
 	width: fit-content;
 	height: 0px;
 	margin: 0 auto;
+	margin-bottom: 100px;
 	display: block;
   }
 
@@ -844,5 +845,17 @@ section h3, section h4{
 
 	.container .card .face.face2 p{
 		font-size: 15px;
+	}
+
+	.preview-next {
+		width: 99vw;
+	}
+
+	.prev {
+		padding-left: 8px;
+	}
+
+	.prev, .next{
+		margin-top: -38%;
 	}
 }
